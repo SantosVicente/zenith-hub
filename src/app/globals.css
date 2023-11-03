@@ -66,3 +66,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    #271231,
+    #442063,
+    #1d3263,
+    #1d3263,
+    #442063,
+    #271231
+  );
+}

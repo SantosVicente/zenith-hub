@@ -1,15 +1,33 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import Logo from "../assets/images/logo_sem_fundo.png";
+import AboutUs from "@/components/ui/AboutUs";
+import Portfolio from "@/components/ui/Portfolio";
+import Header from "@/components/ui/header";
+import Hero from "@/components/ui/hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen">
-      <header className="flex w-full h-12 items-center justify-between px-16 my-2">
-        <Image src={Logo} alt="logo Zenith HUB" width="300" />
+    <>
+      <div className="flex flex-col min-h-screen relative">
+        {/*<video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-50"
+      >
+        <source src="/background.mp4" type="video/mp4" />
+  </video>*/}
 
-        <Button>Sign in</Button>
-      </header>
-    </main>
+        <Header />
+
+        <Hero />
+      </div>
+      <div
+        className="flex flex-col gap-96 px-[20rem] border-t border-zinc-100 bg-gradient"
+        id="about"
+      >
+        <AboutUs />
+
+        <Portfolio />
+      </div>
+    </>
   );
 }
