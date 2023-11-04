@@ -54,14 +54,14 @@ export default function Header() {
         </Link>
 
         <Link
-          href="#objetivos"
+          href="#mainObjectives"
           className="text-zinc-400 hover:text-zinc-100 transition-colors"
         >
           Objetivos
         </Link>
 
         <Link
-          href="#areas"
+          href="#expertiseAreas"
           className="text-zinc-400 hover:text-zinc-100 transition-colors"
         >
           Áreas
