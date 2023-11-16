@@ -17,7 +17,7 @@ export default function ProjectCard({
   projectLink,
 }: ProjectCardProps) {
   return (
-    <div className="bg-zinc-700 p-5 rounded-xl flex flex-col gap-4">
+    /*<div className="bg-zinc-700 p-5 rounded-xl flex flex-col gap-4">
       <div>
         <Image src={macbookMenu} alt="macbook menu" className="h-4 w-auto" />
       </div>
@@ -45,6 +45,37 @@ export default function ProjectCard({
         className="rounded-sm h-auto w-full object-contain"
         sizes="100vw"
       />
+    </div>*/
+    <div className="w-2/3 flex h-[125%]  items-center">
+      <div className="p-6 bg-zinc-100 text-black flex flex-col h-full rounded-lg gap-[10%] justify-center pr-28">
+          <div>
+            <h1 className="font-bold text-3xl">Teste de Titulo</h1>
+          </div>
+          <div>
+            <p className="text-sm text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odio accusantium velit. Dolore quae provident hic quo quidem minus sed sint corrupti consequatur, reiciendis officia aspernatur cum facere odio? Libero!</p>
+          </div>
+          <div className="flex justify-between px-2">
+            <div>
+              some icons
+            </div>
+            <div>
+                <button>Teste</button>
+            </div>
+          </div>
+      </div>
+      <div className="z-10 rounded-3xl h-[70%] aspect-video -ml-20 w-full object-contain bg-img hover:scale-105 transition-all cursor-pointer flex items-center justify-center">
+        <h1 className="h1">
+          <span>reveal</span>
+        </h1>
+      </div>
+      {/* <Image
+        src={projectImage}
+        alt="project image"
+        width={0}
+        height={0}
+        className="rounded-3xl h-full -ml-20 w-full object-contain"
+        sizes="100vw"
+      /> */}
     </div>
   );
 }

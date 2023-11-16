@@ -19,7 +19,7 @@ export default function Portfolio() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-3 w-full gap-x-40 gap-y-24">
+      <div className="grid grid-cols-1 w-full gap-x-40 gap-y-24">
         {projectsArray.map((project, index) => (
           <ProjectCard
             key={index}

@@ -14,7 +14,7 @@ export const projectsArray = [
     projectImage: "https://placehold.co/600x350",
     projectLink: "http://github.com/SantosVicente/SysVote",
   },
-  {
+  /* {
     title: "Projeto 2",
     description:
       "Este é um exemplo de card de exibição de projeto para a página do portfólio",
@@ -53,5 +53,5 @@ export const projectsArray = [
     techs: ["Next.js", "TailwindCSS"],
     projectImage: "https://placehold.co/600x350",
     projectLink: "http://github.com/SantosVicente/SysVote",
-  },
+  }, */
 ];
