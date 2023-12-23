@@ -3,86 +3,78 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Logo from "../../assets/images/logo_sem_fundo.png";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import Link from "next/link";
-import { User2 } from "lucide-react";
+import { Menu, User2 } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./sheet";
 
 export default function Header() {
   return (
-    <header className="w-full h-12 px-16 my-2 grid grid-cols-3">
-      <Image src={Logo} alt="logo Zenith HUB" width="300" />
+    <header className="w-full h-12 px-16 my-4 flex items-center justify-center md:grid md:grid-cols-3">
+      <Image
+        src={Logo}
+        alt="logo Zenith HUB"
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="object-cover w-72"
+      />
 
-      <div className="flex gap-6 items-center justify-center">
+      <div className="hidden md:flex gap-6 items-center mt-2 h-full justify-center">
         <Link
-          href="/"
-          className="text-zinc-400 hover:text-zinc-100 transition-colors"
+          href="#members"
+          className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
         >
-          Home
+          Integrantes
         </Link>
-
-        <DropdownMenu>
-          <DropdownMenuTrigger className="text-zinc-400 hover:text-zinc-100 transition-colors">
-            Integrantes
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem className="p-0">
-              <Link
-                href="https://github.com/SantosVicente" //levar para integrantes/[name] futuramente
-                className="w-full h-full p-2"
-              >
-                SantosVicente
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="p-0">
-              <Link
-                href="https://github.com/SantosVicente"
-                className="w-full h-full p-2"
-              >
-                Integrante2
-              </Link>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
 
         <Link
           href="#about"
-          className="text-zinc-400 hover:text-zinc-100 transition-colors"
+          className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
         >
           Sobre Nós
         </Link>
 
         <Link
+          href="#portfolio"
+          className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
+        >
+          Portfólio
+        </Link>
+
+        <Link
           href="#mainObjectives"
-          className="text-zinc-400 hover:text-zinc-100 transition-colors"
+          className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
         >
           Objetivos
         </Link>
 
         <Link
           href="#expertiseAreas"
-          className="text-zinc-400 hover:text-zinc-100 transition-colors"
+          className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
         >
           Áreas
         </Link>
 
         <Link
           href="#faqs"
-          className="text-zinc-400 hover:text-zinc-100 transition-colors"
+          className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
         >
           {`FAQ's`}
         </Link>
       </div>
 
-      <div className="flex items-center justify-end mr-2">
+      <div className="hidden md:flex items-end h-full justify-end mr-2 -mt-1">
         <Link href="#contact">
           <Button
             variant="outline"
-            className="flex items-center gap-1 bg-[#14101b] opacity-75"
+            className="flex items-center gap-1 bg-[#14101b] opacity-75 transform hover:scale-110 transition-all"
           >
             <User2 size={20} />
             Contato

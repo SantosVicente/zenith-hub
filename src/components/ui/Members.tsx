@@ -6,7 +6,7 @@ const InterFont = Inter({ subsets: ["latin"] });
 
 export default function Members() {
   return (
-    <div className="flex flex-col gap-24 w-full items-center">
+    <div className="flex flex-col gap-24 w-full items-center pt-20">
       <h1 className="text-5xl font-semibold max-w-5xl w-full text-center pt-28">
         Nossos membros
       </h1>

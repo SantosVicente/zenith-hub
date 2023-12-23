@@ -8,6 +8,7 @@ import FAQs from "@/components/ui/FAQs";
 import Members from "@/components/ui/Members";
 import Contact from "@/components/ui/Contact";
 import Footer from "@/components/ui/Footer";
+import AboutUsMobile from "@/components/ui/AboutUsMobile";
 
 export default function Home() {
   return (
@@ -26,9 +27,14 @@ export default function Home() {
 
         <Hero />
       </div>
-      <div className="flex flex-col gap-96 pt-20 px-[20rem] border-t border-zinc-100 bg-gradient">
+      <div className="flex flex-col gap-48 pt-20 px-8 md:px-[20rem] border-t border-zinc-100 bg-gradient">
         <div id="about">
-          <AboutUs />
+          <div className="hidden md:block">
+            <AboutUs />
+          </div>
+          <div className="block md:hidden">
+            <AboutUsMobile />
+          </div>
         </div>
 
         <div id="portfolio">
@@ -46,7 +52,7 @@ export default function Home() {
 
       <div className="m-0 p-0 border border-[#d73cbe] border-dashed" />
 
-      <div className="pt-48 px-[20rem] relative pb-32" id="faqs bg-[#200424]">
+      <div className="pt-48 px-[20rem] relative pb-32" id="faqs">
         <video
           autoPlay
           loop
@@ -60,7 +66,7 @@ export default function Home() {
 
       <div className="m-0 p-0 border border-[#d73cbe] border-dashed" />
 
-      <div className="flex flex-col gap-96 pt-20 px-[20rem] bg-gradient border-b border-zinc-100">
+      <div className="flex flex-col gap-48 px-[20rem] bg-gradient border-b border-zinc-100">
         <div id="members">
           <Members />
         </div>

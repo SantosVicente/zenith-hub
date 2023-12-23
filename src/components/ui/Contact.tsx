@@ -9,7 +9,7 @@ const OrbitronFont = Orbitron({ subsets: ["latin"] });
 
 export default function Contact() {
   return (
-    <div className="flex gap-20 justify-between items-center pb-40">
+    <div className="flex gap-20 justify-between items-center pb-40 pt-28">
       <div className="flex flex-col gap-20">
         <h1 className="text-5xl font-bold max-w-2xl">
           Entre em contato conosco
