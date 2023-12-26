@@ -17,14 +17,14 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col min-h-screen relative overflow-x-hidden">
-        {/* <video
+        <video
           autoPlay
           loop
           muted
           className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-50"
         >
           <source src="/lava.mp4" type="video/mp4" />
-        </video> */}
+        </video>
 
         <Header />
 

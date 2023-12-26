@@ -26,7 +26,7 @@
 
     --radius: 0.5rem;
   }
-  
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -58,7 +58,6 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -68,7 +67,7 @@
   }
 }
 
-.bg-img{
+.bg-img {
   background-image: url(https://w.wallhaven.cc/full/kx/wallhaven-kxj3l1.jpg);
   background-position: center;
   background-size: 24rem;
@@ -85,7 +84,7 @@
   line-height: 1;
 }
 
-.h1 span{
+.h1 span {
   display: none;
   animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
@@ -96,10 +95,10 @@
 
 @keyframes reveal {
   0% {
-    transform: translate(0,100%);
+    transform: translate(0, 100%);
   }
   100% {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 

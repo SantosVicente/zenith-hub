@@ -11,7 +11,7 @@ const InterFont = Inter({ subsets: ["latin"] });
 
 export default function MainObjectivesMobile() {
   return (
-    <div className="flex flex-col gap-16 w-full items-center pt-32">
+    <div className="flex flex-col gap-16 w-full items-center pt-16">
       <ScrollAnimation delay={0.1} duration={0.3} y={150}>
         <h1 className="hidden md:block text-5xl font-semibold max-w-5xl w-full text-center">
           Quais são os principais objetivos da Zenith ?
