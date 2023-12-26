@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.className} bg-[#1b0125]`}>
+      <body
+        className={`${jetBrainsMono.className} bg-[#1b0125] overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>
