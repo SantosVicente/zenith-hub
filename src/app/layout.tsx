@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
+const jetBrains = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Zenith HUB",
@@ -17,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${jetBrainsMono.className} bg-[#1b0125] overflow-x-hidden`}
-      >
+      <body className={`${jetBrains.className} bg-[#1b0125] overflow-x-hidden`}>
         {children}
       </body>
     </html>

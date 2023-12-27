@@ -11,7 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./carousel";
-const InterFont = Inter({ subsets: ["latin"] });
+const InterText = Inter({ subsets: ["latin"] });
 
 const Items = [
   {
@@ -42,17 +42,17 @@ const Items = [
 
 export default function Members() {
   return (
-    <div className="flex flex-col gap-12 md:gap-24 w-full items-center pt-5">
-      <h1 className="text-3xl md:text-5xl font-semibold max-w-5xl w-full text-center pt-28">
+    <div className="flex flex-col gap-12 2xl:gap-24 w-full items-center pt-5">
+      <h1 className="text-4xl 2xl:text-5xl font-semibold max-w-5xl w-full text-center pt-28">
         Nossos membros
       </h1>
 
-      <Carousel className="w-full transform scale-[.8] md:scale-100 flex items-center justify-center">
-        <CarouselContent className="flex gap-8 md:items-center md:justify-center">
+      <Carousel className="w-full transform scale-[.8] 2xl:scale-100 flex items-center justify-center">
+        <CarouselContent className="flex gap-8 md:gap-12 xl:gap-8 xl:items-center xl:justify-center">
           {Items.map((item, index) => (
             <CarouselItem
               key={index}
-              className="pt-24 basis-full md:basis-1/2 lg:basis-1/4"
+              className="pt-24 basis-full md:basis-[30%] xl:basis-1/4"
             >
               <div className="relative bg-zinc-200 bg-opacity-30 flex flex-col gap-10 p-8 pt-24 rounded-3xl">
                 <Image
@@ -64,12 +64,12 @@ export default function Members() {
                 />
 
                 <p
-                  className={`${InterFont.className} text-justify text-xl text-zinc-50 font-semibold pt-6 h-44`}
+                  className={`${InterText.className} text-justify text-xl text-zinc-50 font-semibold pt-6 h-44`}
                 >
                   {item.description}
                 </p>
 
-                <div className="flex items-center justify-between text-[#14101b]">
+                <div className="flex items-center pt-4 justify-between text-[#14101b]">
                   <span className="text-xl font-bold text-justify">
                     {item.name} - {item.cargo}
                   </span>

@@ -14,7 +14,7 @@ export default function FAQsMobile() {
       </h1>
 
       <Accordion type="single" collapsible className="w-full">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-[#14101b]">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 text-[#14101b]">
           <AccordionItem value="item-1">
             <div className="bg-zinc-200 flex flex-col gap-4">
               <AccordionTrigger className="bg-[#d73cbe] text-zinc-100 px-4">

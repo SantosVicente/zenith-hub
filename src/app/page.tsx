@@ -30,7 +30,7 @@ export default function Home() {
 
         <Hero />
       </div>
-      <div className="flex flex-col overflow-x-hidden gap-48 pt-20 px-8 md:px-[20rem] border-t border-zinc-100 bg-gradient">
+      <div className="flex flex-col overflow-x-hidden gap-48 pt-20 px-8 md:px-20 2xl:px-[20rem] border-t border-zinc-100 bg-gradient">
         <div id="about">
           <div className="hidden md:block">
             <AboutUs />
@@ -45,10 +45,10 @@ export default function Home() {
         </div>
 
         <div id="mainObjectives">
-          <div className="hidden md:block">
+          <div className="hidden xl:block">
             <MainObjectives />
           </div>
-          <div className="block md:hidden">
+          <div className="block xl:hidden">
             <MainObjectivesMobile />
           </div>
         </div>
@@ -66,34 +66,34 @@ export default function Home() {
       <div className="m-0 p-0 border border-[#d73cbe] border-dashed" />
 
       <div
-        className="pt-24 md:pt-48 px-8 md:px-[20rem] relative pb-32"
+        className="pt-24 md:pt-48 px-8 md:px-20 2xl:px-[20rem] relative pb-32"
         id="faqs"
       >
         <video
           autoPlay
           loop
           muted
-          className="hidden md:block absolute -top-64 left-0 w-full h-full object-cover -z-10 bg-[#200424]"
+          className="hidden xl:block absolute -top-64 left-0 w-full h-full object-cover -z-10 bg-[#200424]"
         >
           <source src="/backgroundFaq.mp4" type="video/mp4" />
         </video>
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <FAQs />
         </div>
 
-        <div className="block md:hidden">
+        <div className="block xl:hidden">
           <FAQsMobile />
         </div>
       </div>
 
       <div className="m-0 p-0 border border-[#d73cbe] border-dashed" />
 
-      <div className="flex flex-col gap-48 px-8 md:px-[20rem] bg-gradient border-b border-zinc-100">
-        <div id="members">
+      <div className="flex flex-col gap-48 bg-gradient border-b border-zinc-100">
+        <div id="members" className="px-8 2xl:px-[20rem]">
           <Members />
         </div>
 
-        <div id="contact">
+        <div id="contact" className="px-8 2xl:px-[20rem] md:px-20">
           <Contact />
         </div>
       </div>

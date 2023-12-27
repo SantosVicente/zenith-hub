@@ -19,12 +19,12 @@ export default function Portfolio() {
     <div className="flex flex-col w-full items-center justify-center gap-8 md:gap-20 pt-32">
       <div className="flex w-full justify-between items-end">
         <ScrollAnimation delay={0.1} duration={0.3} y={150}>
-          <h1 className="text-3xl md:text-5xl font-semibold">Portfólio</h1>
+          <h1 className="text-4xl 2xl:text-5xl font-semibold">Portfólio</h1>
         </ScrollAnimation>
         <ScrollAnimation delay={0.3} duration={0.3} y={150}>
           <Link
             href="https://github.com/SantosVicente"
-            className="flex text-sm md:text-lg gap-2 items-center border-b border-zinc-100"
+            className="flex text-sm md:text-base 2xl:text-lg gap-2 items-center border-b border-zinc-100"
             target="_blank"
           >
             Ver mais

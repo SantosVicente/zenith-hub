@@ -22,17 +22,17 @@ export default function MainObjectivesMobile() {
       </ScrollAnimation>
 
       <Accordion type="single" collapsible className="w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-[#14101b]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 text-[#14101b]">
           <ScrollAnimation delay={0.3} duration={0.3} y={150}>
             <AccordionItem value="item-1">
               <div className="relative bg-zinc-200 flex flex-col gap-4 px-8 py-4">
                 <AccordionTrigger>
-                  <div className="absolute top-7 left-14 w-16 h-16 flex items-center justify-center bg-zinc-950 rounded-full transform -translate-x-1/2">
+                  <div className="absolute top-1/2 left-14 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex items-center justify-center bg-zinc-950 rounded-full">
                     <ClipboardList size={30} className="text-zinc-200" />
                   </div>
 
                   <h2
-                    className={`${InterFont.className} text-right mr-2 uppercase text-xl font-bold`}
+                    className={`${InterFont.className} text-right mr-2 w-full uppercase text-xl font-bold`}
                   >
                     Fomentar a Inovação
                   </h2>
@@ -53,11 +53,11 @@ export default function MainObjectivesMobile() {
             <AccordionItem value="item-2">
               <div className="relative bg-zinc-200 flex flex-col gap-4 px-8 py-4">
                 <AccordionTrigger>
-                  <div className="absolute top-7 left-14 w-16 h-16 flex items-center justify-center bg-zinc-950 rounded-full transform -translate-x-1/2">
+                  <div className="absolute top-1/2 left-14 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex items-center justify-center bg-zinc-950 rounded-full">
                     <TrendingUp size={30} className="text-zinc-200" />
                   </div>
                   <h2
-                    className={`${InterFont.className} uppercase text-right mr-2 text-xl font-bold`}
+                    className={`${InterFont.className} uppercase w-full text-right mr-2 text-xl font-bold`}
                   >
                     Desenvolver Talentos
                   </h2>
@@ -77,11 +77,11 @@ export default function MainObjectivesMobile() {
             <AccordionItem value="item-3">
               <div className="relative bg-zinc-200 flex flex-col gap-4 px-8 py-4">
                 <AccordionTrigger>
-                  <div className="absolute top-7 left-14 w-16 h-16 flex items-center justify-center bg-zinc-950 rounded-full transform -translate-x-1/2">
+                  <div className="absolute top-1/2 left-14 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex items-center justify-center bg-zinc-950 rounded-full">
                     <Coffee size={30} className="text-zinc-200 ml-1" />
                   </div>
                   <h2
-                    className={`${InterFont.className} uppercase text-right mr-2 text-xl font-bold`}
+                    className={`${InterFont.className} uppercase w-full text-right mr-2 text-xl font-bold`}
                   >
                     Impactar a Comunidade
                   </h2>

@@ -2,17 +2,17 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Orbitron } from "next/font/google";
-const OrbitronFont = Orbitron({ subsets: ["latin"] });
+const OrbitronText = Orbitron({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
     <div className="flex flex-col flex-1 gap-4 w-full items-center justify-center">
       <h1
-        className={`font-bold text-4xl text-center md:text-5xl ${OrbitronFont.className}`}
+        className={`font-bold text-4xl text-center xl:text-5xl ${OrbitronText.className}`}
       >
         CONSTRUA O FUTURO
       </h1>
-      <h2 className="font-bold text-xl text-center mx-8 md:text-3xl">
+      <h2 className="font-bold text-xl text-center mx-8 xl:text-3xl">
         Faça parte da revolução da codificação!
       </h2>
 

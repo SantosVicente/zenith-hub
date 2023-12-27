@@ -24,17 +24,17 @@ import {
 
 export default function Header() {
   return (
-    <header className="w-full h-12 pl-4 pr-8 md:px-16 my-4 flex items-center justify-between md:grid md:grid-cols-3">
+    <header className="w-full h-12 pl-4 pr-8 md:px-16 my-4 flex items-center justify-between xl:grid xl:grid-cols-3">
       <Image
         src={Logo}
         alt="logo Zenith HUB"
         width={0}
         height={0}
         sizes="100vw"
-        className="object-cover w-52 md:w-72"
+        className="object-cover w-52 md:w-60 2xl:w-72"
       />
 
-      <div className="hidden md:flex gap-6 items-center mt-2 h-full justify-center">
+      <div className="hidden xl:flex gap-6 items-center mt-2 h-full justify-center">
         <Link
           href="#members"
           className="text-zinc-400 hover:text-zinc-100 transform hover:scale-110 transition-all"
@@ -78,7 +78,7 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className="hidden md:flex items-end h-full justify-end mr-2 -mt-1">
+      <div className="hidden xl:flex items-end h-full justify-end mr-2 -mt-1">
         <Link href="#contact">
           <Button
             variant="outline"
@@ -90,7 +90,7 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className="flex md:hidden">
+      <div className="flex xl:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <div className="cursor-pointer">
